@@ -20,7 +20,7 @@ func Do(s string) (b string) {
 	// var b string = s
 	b = s
 	{
-		b:= "BBBB"
+		b := "BBBB"
 		fmt.Println(b)
 	}
 	fmt.Println(b)
