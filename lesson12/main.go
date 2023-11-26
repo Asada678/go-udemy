@@ -5,7 +5,7 @@ import (
 	. "fmt"
 	f "fmt"
 
-	"lesson12/foo"
+	"go-udemy/lesson12/foo"
 )
 
 // scope
