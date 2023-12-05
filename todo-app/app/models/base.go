@@ -1,8 +1,10 @@
 package models
 
 import (
+	"crypto/sha1"
 	"database/sql"
 	"fmt"
+	"github.com/google/uuid"
 	"go-udemy/todo-app/config"
 	"log"
 
@@ -32,4 +34,14 @@ func init() {
     	created_at DATETIME)`, tableNameUser)
 	fmt.Println(cmdU)
 	Db.Exec(cmdU)
+}
+
+func createUUID() (uuidObj uuid.UUID) {
+	uuidObj, _ = uuid.NewUUID()
+	return uuidObj
+}
+
+func Encrypt(plaintext string) (cryptText string) {
+	cryptText = fmt.Sprintf("%x", sha1.Sum([]byte(plaintext)))
+	return cryptText
 }
