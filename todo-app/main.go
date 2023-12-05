@@ -2,15 +2,16 @@ package main
 
 import (
 	"fmt"
-	"go-udemy/todo-app/config"
-	"log"
+	"go-udemy/todo-app/app/models"
 )
 
 func main() {
-	fmt.Println(config.Config.Port)
-	fmt.Println(config.Config.SQLDriver)
-	fmt.Println(config.Config.DbName)
-	fmt.Println(config.Config.LogFile)
+	//fmt.Println(config.Config.Port)
+	//fmt.Println(config.Config.SQLDriver)
+	//fmt.Println(config.Config.DbName)
+	//fmt.Println(config.Config.LogFile)
+	//
+	//log.Println("test")
 
-	log.Println("test")
+	fmt.Println(models.Db)
 }
