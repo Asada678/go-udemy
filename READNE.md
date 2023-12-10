@@ -11,5 +11,6 @@ psql sample_db
 psql -U sample_user -f example_psql.sql -d sample_db;
 psql sample_db;
 \d
-
+sqlite3 webapp.sql
+.table
 ```
